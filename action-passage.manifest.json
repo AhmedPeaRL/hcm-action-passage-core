@@ -1,0 +1,23 @@
+{
+  "manifest_role": "action_passage_layer",
+
+  "core_definition": {
+    "action_is_external": true,
+    "system_never_executes": true,
+    "system_never_decides": true,
+    "system_never_initiates": true
+  },
+
+  "allowed_capabilities": {
+    "request_to_exit_system": true,
+    "external_execution_reference": true,
+    "result_reentry_as_witness": true
+  },
+
+  "forbidden_capabilities": {
+    "internal_execution": true,
+    "conditional_response": true,
+    "success_dependency": true,
+    "optimization_loops": true
+  }
+}
